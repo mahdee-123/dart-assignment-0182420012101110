@@ -1,0 +1,25 @@
+// Create an interface-like class Playable and implement it in Football and Cricket.
+class Playable {
+  void play() {}
+}
+
+class Football implements Playable {
+  @override
+  void play() {
+    print('Playing football');
+  }
+}
+
+class Cricket implements Playable {
+  @override
+  void play() {
+    print('Playing cricket');
+  }
+}
+
+void main() {
+  Football football = Football();
+  Cricket cricket = Cricket();
+  football.play();
+  cricket.play();
+}

@@ -1,0 +1,17 @@
+// Create a Person superclass and an Employee subclass that adds salary information.
+class Person {
+  String name;
+
+  Person(this.name);
+}
+
+class Employee extends Person {
+  double salary;
+
+  Employee(String name, this.salary) : super(name);
+}
+
+void main() {
+  Employee employee = Employee('Arnob', 50000);
+  print('${employee.name}, ${employee.salary}');
+}
